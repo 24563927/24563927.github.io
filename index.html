@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <title>测试页面</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
         h1 {
             color: blue;
             text-align: center;
+            margin-top: 50px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.2s ease;
+        }
+        a:hover {
+            background-color: #f2f2f2;
+        }
+        a[target="_blank"]::after {
+            content: " \f08e";
+            font-family: FontAwesome;
+            margin-left: 5px;
         }
     </style>
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Hello！</h1>   
-    <p>推荐网站(点击转跳)</p>
-    <a href="https://www.runoob.com">菜鸟教程</a>
+    <h1>Hello！</h1>
+    <p>推荐网站(点击跳转)</p>
+    <a href="https://www.runoob.com" target="_blank">菜鸟教程</a>
     <a href="https://www.oi-wiki.org">oi-wiki</a>
 </body>
 </html>
